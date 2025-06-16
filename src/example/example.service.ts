@@ -1,54 +1,33 @@
-import { Injectable, NotFoundException } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import { ExampleDto } from './dto/example.dto';
+import { InjectModel } from '@nestjs/mongoose';
+import { Example, ExampleDocument } from './schema/example.schema';
+import { Model } from 'mongoose';
 
 @Injectable()
 export class ExampleService {
   example: ExampleDto[];
-  constructor() {
-    this.example = [
-      {
-        id: 1,
-        name: 'maga',
-        title: 'hello maga',
-      },
-    ];
-  }
+  constructor(
+    @InjectModel(Example.name) private exampleModel: Model<ExampleDocument>
+  ) {}
 
   getExample() {
-    return this.example;
+    return this.exampleModel.find({});
   }
 
-  getByID(id: number): ExampleDto {
-    const item = this.example.find((e) => e.id === id);
-    if (!item) {
-      throw new NotFoundException(`Item with ID ${id} not found`);
-    }
-    return item;
+  getByID(id: string) {
+    return this.exampleModel.findById(id);
   }
 
-  createExample(dto: ExampleDto): ExampleDto[] {
-    const data: ExampleDto = {
-      ...dto,
-      id: new Date().getTime(),
-    };
-    this.example.push(data);
-    return this.example;
+  createExample(dto: ExampleDto) {
+    return this.exampleModel.create(dto);
   }
 
-  updateById(id: number, dto: ExampleDto): ExampleDto {
-    let currentExample = this.example.find((e) => e.id === id);
-    if (!currentExample) {
-      throw new NotFoundException(`Item with ID ${id} not found`);
-    }
-    currentExample = dto;
-    return currentExample;
+  updateById(id: string, dto: ExampleDto) {
+    return this.exampleModel.findByIdAndUpdate(id, dto, { new: true });
   }
 
-  deletById(id: number): ExampleDto[] {
-    const currentExample = this.example.filter((e) => e.id !== id);
-    if (!currentExample) {
-      throw new NotFoundException(`Item with ID ${id} not found`);
-    }
-    return currentExample;
+  deletById(id: string) {
+    return this.exampleModel.findByIdAndDelete(id);
   }
 }
