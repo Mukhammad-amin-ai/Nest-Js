@@ -1,0 +1,193 @@
+{
+  "data": {
+    "productPage": {
+      "installmentWidget": {
+        "title": "Ваш лимит 800 000,00 сум",
+        "titleColor": "#1F2026",
+        "subtitle": "Можно увеличить до 25 000 000 сум",
+        "subtitleColor": "#7F4DFF",
+        "icon": "https://static.uzum.uz/nasiya/Nasiya_Available.png",
+        "link": "uzum://nasiya",
+        "lockedIcon": null,
+        "userStatus": "NEED_CARD",
+        "calculationsPairs": [
+          {
+            "calculations": [
+              {
+                "icon": null,
+                "month": 24,
+                "text": "8 429 сум",
+                "title": "24 мес",
+                "subText": "× 24 мес",
+                "preselected": false,
+                "__typename": "InstallmentCalculation"
+              },
+              {
+                "icon": null,
+                "month": 12,
+                "text": "13 883 сум",
+                "title": "12 мес",
+                "subText": "× 12 мес",
+                "preselected": false,
+                "__typename": "InstallmentCalculation"
+              },
+              {
+                "icon": null,
+                "month": 6,
+                "text": "24 990 сум",
+                "title": "6 мес",
+                "subText": "× 6 мес",
+                "preselected": false,
+                "__typename": "InstallmentCalculation"
+              },
+              {
+                "icon": null,
+                "month": 3,
+                "text": "44 426 сум",
+                "title": "3 мес",
+                "subText": "× 3 мес",
+                "preselected": false,
+                "__typename": "InstallmentCalculation"
+              }
+            ],
+            "skuId": 2594501,
+            "isDefault": false,
+            "__typename": "InstallmentCalculationsPair"
+          },
+          {
+            "calculations": [
+              {
+                "icon": null,
+                "month": 24,
+                "text": "3 258 сум",
+                "title": "24 мес",
+                "subText": "× 24 мес",
+                "preselected": false,
+                "__typename": "InstallmentCalculation"
+              },
+              {
+                "icon": null,
+                "month": 12,
+                "text": "5 366 сум",
+                "title": "12 мес",
+                "subText": "× 12 мес",
+                "preselected": false,
+                "__typename": "InstallmentCalculation"
+              },
+              {
+                "icon": null,
+                "month": 6,
+                "text": "9 660 сум",
+                "title": "6 мес",
+                "subText": "× 6 мес",
+                "preselected": false,
+                "__typename": "InstallmentCalculation"
+              },
+              {
+                "icon": null,
+                "month": 3,
+                "text": "17 173 сум",
+                "title": "3 мес",
+                "subText": "× 3 мес",
+                "preselected": false,
+                "__typename": "InstallmentCalculation"
+              }
+            ],
+            "skuId": 2594503,
+            "isDefault": true,
+            "__typename": "InstallmentCalculationsPair"
+          },
+          {
+            "calculations": [
+              {
+                "icon": null,
+                "month": 24,
+                "text": "13 175 сум",
+                "title": "24 мес",
+                "subText": "× 24 мес",
+                "preselected": false,
+                "__typename": "InstallmentCalculation"
+              },
+              {
+                "icon": null,
+                "month": 12,
+                "text": "21 700 сум",
+                "title": "12 мес",
+                "subText": "× 12 мес",
+                "preselected": false,
+                "__typename": "InstallmentCalculation"
+              },
+              {
+                "icon": null,
+                "month": 6,
+                "text": "39 060 сум",
+                "title": "6 мес",
+                "subText": "× 6 мес",
+                "preselected": false,
+                "__typename": "InstallmentCalculation"
+              },
+              {
+                "icon": null,
+                "month": 3,
+                "text": "69 440 сум",
+                "title": "3 мес",
+                "subText": "× 3 мес",
+                "preselected": false,
+                "__typename": "InstallmentCalculation"
+              }
+            ],
+            "skuId": 2594502,
+            "isDefault": false,
+            "__typename": "InstallmentCalculationsPair"
+          },
+          {
+            "calculations": [
+              {
+                "icon": null,
+                "month": 24,
+                "text": "8 358 сум",
+                "title": "24 мес",
+                "subText": "× 24 мес",
+                "preselected": false,
+                "__typename": "InstallmentCalculation"
+              },
+              {
+                "icon": null,
+                "month": 12,
+                "text": "13 766 сум",
+                "title": "12 мес",
+                "subText": "× 12 мес",
+                "preselected": false,
+                "__typename": "InstallmentCalculation"
+              },
+              {
+                "icon": null,
+                "month": 6,
+                "text": "24 780 сум",
+                "title": "6 мес",
+                "subText": "× 6 мес",
+                "preselected": false,
+                "__typename": "InstallmentCalculation"
+              },
+              {
+                "icon": null,
+                "month": 3,
+                "text": "44 053 сум",
+                "title": "3 мес",
+                "subText": "× 3 мес",
+                "preselected": false,
+                "__typename": "InstallmentCalculation"
+              }
+            ],
+            "skuId": 2594504,
+            "isDefault": false,
+            "__typename": "InstallmentCalculationsPair"
+          }
+        ],
+        "promoInfo": null,
+        "__typename": "InstallmentWidget"
+      },
+      "__typename": "ProductPage"
+    }
+  }
+}
