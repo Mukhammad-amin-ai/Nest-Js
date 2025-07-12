@@ -5,12 +5,12 @@ import { AppService } from './app.service';
 import { ProductsModule } from './products/products.module';
 import { AuthModule } from './auth/auth.module';
 import { ExampleModule } from './example/example.module';
-import { CategoryModule } from './category/category.module';
 import { UserModule } from './user/user.module';
+import { CategoryModule } from './category/category.module';
 
 const IMPORTS = [
-  UserModule,
   CategoryModule,
+  UserModule,
   ProductsModule,
   AuthModule,
   ExampleModule,
