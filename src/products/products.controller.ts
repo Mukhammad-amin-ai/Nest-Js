@@ -20,7 +20,7 @@ export class ProductsController {
     return this.productsService.create(createProductDto);
   }
 
-  @Post()
+  @Post('/many')
   createMany(@Body() createProduct: CreateProductDto[]) {
     return this.productsService.createMany(createProduct);
   }
